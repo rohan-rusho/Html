@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: none;
+            font-family: "Arial", sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add colors to social media links */
+        .social-link {
+            color: #333;
+        }
+
+        .social-link:hover {
+            color: #FF0000;
+            /* Change the color to your desired hover color */
+        }
+
+        /* Add color to email and phone number */
+        .contact-info {
+            color: #ff1414;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        img {
+            display: block;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 40px;">Rohan Rusho's Production!</h1>
+    </header>
+    <nav>
+        <!-- Add navigation links here -->
+    </nav>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p style="font-size: 18px; line-height: 1.5;">I am Rohan Rusho, a software engineer by profession and a
+                writer by passion. I am passionate about
+                learning new things and sharing my knowledge with others.</p>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: <span class="social-link" href="rohan.rusho@gmail.com">📧rohan.rusho@gmail.com</a>
+                <li>Contact No: <span class="social-link" href="01719688186">📞01719688186</a>
+                <li>Social Media:
+                    <a class="social-link" href="https://www.twitter.com/rohan_rusho">Twitter</a>,
+                    <a class="social-link" href="https://www.instagram.com/rohan.rusho">Instagram</a>,
+                    <a class="social-link" href="https://www.facebook.com/eita.rohan">Facebook</a>
+                </li>
+                <li>YouTube Channel: <a class="social-link" href="https://www.youtube.com/@rohanrusho">Rohan's
+                        Channel</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Photos</h2>
+            <img src="E:\Study\3rd Semester\Code\Visual Code\Html\16821363450311.jpg" alt="Photo 1" height="400"
+                width="300">
+            <img src="E:\Study\3rd Semester\Code\Visual Code\Html\Picsart_23-03-21_10-18-34-263.jpg" alt="Photo 2"
+                height="300" width="399">
+            <!-- Add more photos if needed -->
+        </section>
+        <section>
+            <h2>Contact Me</h2>
+            <p style="font-size: 18px; line-height: 1.5;">Use the form below to get in touch:</p>
+            <form action="contact.php" method="POST" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file"><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Rohan Rusho. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
